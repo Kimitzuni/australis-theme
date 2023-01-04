@@ -7,9 +7,9 @@ local australis_theme_2="%{$fg[green]%}"
 australis_theme="$australis_theme_0"
 
 case $AUSTRALIS_THEME in
-	"0"|0) australis_theme="$australis_theme_0";;
-	"1"|1) australis_theme="$australis_theme_1";;
-	"2"|2) australis_theme="$australis_theme_2";;
+	"0"|0|"default"|"blue") australis_theme="$australis_theme_0";;
+	"1"|1|"red") australis_theme="$australis_theme_1";;
+	"2"|2|"green") australis_theme="$australis_theme_2";;
 esac
 
 set_prompt() {
